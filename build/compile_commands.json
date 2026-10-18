@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/harsh/Documents/Car-Tug-Of-War/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/CarTugOfWar.dir/main.cpp.o -c /Users/harsh/Documents/Car-Tug-Of-War/main.cpp",
+  "file": "/Users/harsh/Documents/Car-Tug-Of-War/main.cpp",
+  "output": "CMakeFiles/CarTugOfWar.dir/main.cpp.o"
+}
+]
