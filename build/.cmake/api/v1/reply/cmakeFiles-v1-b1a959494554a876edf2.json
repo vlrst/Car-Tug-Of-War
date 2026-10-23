@@ -1,4 +1,18 @@
 {
+	"globsDependent" : 
+	[
+		{
+			"expression" : "/Users/harsh/Documents/Car-Tug-Of-War/src/*.cpp",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"/Users/harsh/Documents/Car-Tug-Of-War/src/Car.cpp",
+				"/Users/harsh/Documents/Car-Tug-Of-War/src/CarTugOfWar.cpp",
+				"/Users/harsh/Documents/Car-Tug-Of-War/src/Kinematics.cpp",
+				"/Users/harsh/Documents/Car-Tug-Of-War/src/main.cpp"
+			]
+		}
+	],
 	"inputs" : 
 	[
 		{

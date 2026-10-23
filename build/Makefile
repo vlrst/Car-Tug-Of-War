@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -129,29 +130,101 @@ CarTugOfWar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/build
 .PHONY : CarTugOfWar/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/Car.o: src/Car.cpp.o
+.PHONY : src/Car.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Car.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o
+.PHONY : src/Car.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/Car.i: src/Car.cpp.i
+.PHONY : src/Car.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Car.cpp.i
+.PHONY : src/Car.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/Car.s: src/Car.cpp.s
+.PHONY : src/Car.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Car.cpp.s
+.PHONY : src/Car.cpp.s
+
+src/CarTugOfWar.o: src/CarTugOfWar.cpp.o
+.PHONY : src/CarTugOfWar.o
+
+# target to build an object file
+src/CarTugOfWar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o
+.PHONY : src/CarTugOfWar.cpp.o
+
+src/CarTugOfWar.i: src/CarTugOfWar.cpp.i
+.PHONY : src/CarTugOfWar.i
+
+# target to preprocess a source file
+src/CarTugOfWar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.i
+.PHONY : src/CarTugOfWar.cpp.i
+
+src/CarTugOfWar.s: src/CarTugOfWar.cpp.s
+.PHONY : src/CarTugOfWar.s
+
+# target to generate assembly for a file
+src/CarTugOfWar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.s
+.PHONY : src/CarTugOfWar.cpp.s
+
+src/Kinematics.o: src/Kinematics.cpp.o
+.PHONY : src/Kinematics.o
+
+# target to build an object file
+src/Kinematics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o
+.PHONY : src/Kinematics.cpp.o
+
+src/Kinematics.i: src/Kinematics.cpp.i
+.PHONY : src/Kinematics.i
+
+# target to preprocess a source file
+src/Kinematics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.i
+.PHONY : src/Kinematics.cpp.i
+
+src/Kinematics.s: src/Kinematics.cpp.s
+.PHONY : src/Kinematics.s
+
+# target to generate assembly for a file
+src/Kinematics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.s
+.PHONY : src/Kinematics.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -162,9 +235,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CarTugOfWar"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Car.o"
+	@echo "... src/Car.i"
+	@echo "... src/Car.s"
+	@echo "... src/CarTugOfWar.o"
+	@echo "... src/CarTugOfWar.i"
+	@echo "... src/CarTugOfWar.s"
+	@echo "... src/Kinematics.o"
+	@echo "... src/Kinematics.i"
+	@echo "... src/Kinematics.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -176,6 +258,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

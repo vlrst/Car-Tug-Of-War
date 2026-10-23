@@ -10,6 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/harsh/Documents/Car-Tug-Of-War/CMakeLists.txt"
   "CMakeFiles/4.4.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.4/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
   "/opt/homebrew/lib/cmake/SDL3/SDL3Config.cmake"
   "/opt/homebrew/lib/cmake/SDL3/SDL3ConfigVersion.cmake"
   "/opt/homebrew/lib/cmake/SDL3/SDL3headersTargets.cmake"

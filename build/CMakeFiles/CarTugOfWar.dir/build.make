@@ -72,32 +72,80 @@ include CMakeFiles/CarTugOfWar.dir/flags.make
 CMakeFiles/CarTugOfWar.dir/codegen:
 .PHONY : CMakeFiles/CarTugOfWar.dir/codegen
 
-CMakeFiles/CarTugOfWar.dir/main.cpp.o: CMakeFiles/CarTugOfWar.dir/flags.make
-CMakeFiles/CarTugOfWar.dir/main.cpp.o: /Users/harsh/Documents/Car-Tug-Of-War/main.cpp
-CMakeFiles/CarTugOfWar.dir/main.cpp.o: CMakeFiles/CarTugOfWar.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CarTugOfWar.dir/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CarTugOfWar.dir/main.cpp.o -MF CMakeFiles/CarTugOfWar.dir/main.cpp.o.d -o CMakeFiles/CarTugOfWar.dir/main.cpp.o -c /Users/harsh/Documents/Car-Tug-Of-War/main.cpp
+CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o: CMakeFiles/CarTugOfWar.dir/flags.make
+CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o: /Users/harsh/Documents/Car-Tug-Of-War/src/Car.cpp
+CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o: CMakeFiles/CarTugOfWar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o -MF CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o.d -o CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o -c /Users/harsh/Documents/Car-Tug-Of-War/src/Car.cpp
 
-CMakeFiles/CarTugOfWar.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CarTugOfWar.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/harsh/Documents/Car-Tug-Of-War/main.cpp > CMakeFiles/CarTugOfWar.dir/main.cpp.i
+CMakeFiles/CarTugOfWar.dir/src/Car.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CarTugOfWar.dir/src/Car.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/harsh/Documents/Car-Tug-Of-War/src/Car.cpp > CMakeFiles/CarTugOfWar.dir/src/Car.cpp.i
 
-CMakeFiles/CarTugOfWar.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CarTugOfWar.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/harsh/Documents/Car-Tug-Of-War/main.cpp -o CMakeFiles/CarTugOfWar.dir/main.cpp.s
+CMakeFiles/CarTugOfWar.dir/src/Car.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CarTugOfWar.dir/src/Car.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/harsh/Documents/Car-Tug-Of-War/src/Car.cpp -o CMakeFiles/CarTugOfWar.dir/src/Car.cpp.s
+
+CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o: CMakeFiles/CarTugOfWar.dir/flags.make
+CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o: /Users/harsh/Documents/Car-Tug-Of-War/src/CarTugOfWar.cpp
+CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o: CMakeFiles/CarTugOfWar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o -MF CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o.d -o CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o -c /Users/harsh/Documents/Car-Tug-Of-War/src/CarTugOfWar.cpp
+
+CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/harsh/Documents/Car-Tug-Of-War/src/CarTugOfWar.cpp > CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.i
+
+CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/harsh/Documents/Car-Tug-Of-War/src/CarTugOfWar.cpp -o CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.s
+
+CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o: CMakeFiles/CarTugOfWar.dir/flags.make
+CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o: /Users/harsh/Documents/Car-Tug-Of-War/src/Kinematics.cpp
+CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o: CMakeFiles/CarTugOfWar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o -MF CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o.d -o CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o -c /Users/harsh/Documents/Car-Tug-Of-War/src/Kinematics.cpp
+
+CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/harsh/Documents/Car-Tug-Of-War/src/Kinematics.cpp > CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.i
+
+CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/harsh/Documents/Car-Tug-Of-War/src/Kinematics.cpp -o CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.s
+
+CMakeFiles/CarTugOfWar.dir/src/main.cpp.o: CMakeFiles/CarTugOfWar.dir/flags.make
+CMakeFiles/CarTugOfWar.dir/src/main.cpp.o: /Users/harsh/Documents/Car-Tug-Of-War/src/main.cpp
+CMakeFiles/CarTugOfWar.dir/src/main.cpp.o: CMakeFiles/CarTugOfWar.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CarTugOfWar.dir/src/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CarTugOfWar.dir/src/main.cpp.o -MF CMakeFiles/CarTugOfWar.dir/src/main.cpp.o.d -o CMakeFiles/CarTugOfWar.dir/src/main.cpp.o -c /Users/harsh/Documents/Car-Tug-Of-War/src/main.cpp
+
+CMakeFiles/CarTugOfWar.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CarTugOfWar.dir/src/main.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/harsh/Documents/Car-Tug-Of-War/src/main.cpp > CMakeFiles/CarTugOfWar.dir/src/main.cpp.i
+
+CMakeFiles/CarTugOfWar.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CarTugOfWar.dir/src/main.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/harsh/Documents/Car-Tug-Of-War/src/main.cpp -o CMakeFiles/CarTugOfWar.dir/src/main.cpp.s
 
 # Object files for target CarTugOfWar
 CarTugOfWar_OBJECTS = \
-"CMakeFiles/CarTugOfWar.dir/main.cpp.o"
+"CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o" \
+"CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o" \
+"CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o" \
+"CMakeFiles/CarTugOfWar.dir/src/main.cpp.o"
 
 # External object files for target CarTugOfWar
 CarTugOfWar_EXTERNAL_OBJECTS =
 
-CarTugOfWar: CMakeFiles/CarTugOfWar.dir/main.cpp.o
+CarTugOfWar: CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o
+CarTugOfWar: CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o
+CarTugOfWar: CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o
+CarTugOfWar: CMakeFiles/CarTugOfWar.dir/src/main.cpp.o
 CarTugOfWar: CMakeFiles/CarTugOfWar.dir/build.make
 CarTugOfWar: /opt/homebrew/lib/libSDL3.0.dylib
 CarTugOfWar: CMakeFiles/CarTugOfWar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CarTugOfWar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable CarTugOfWar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CarTugOfWar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

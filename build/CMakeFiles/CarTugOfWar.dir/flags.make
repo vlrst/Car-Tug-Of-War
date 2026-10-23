@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/include
+CXX_INCLUDES = -I/Users/harsh/Documents/Car-Tug-Of-War/include -I/opt/homebrew/include
 
 CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
 

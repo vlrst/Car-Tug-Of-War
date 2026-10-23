@@ -85,12 +85,12 @@ clean: CMakeFiles/CarTugOfWar.dir/clean
 CMakeFiles/CarTugOfWar.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=1,2 "Built target CarTugOfWar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target CarTugOfWar"
 .PHONY : CMakeFiles/CarTugOfWar.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CarTugOfWar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CarTugOfWar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles 0
 .PHONY : CMakeFiles/CarTugOfWar.dir/rule
@@ -102,7 +102,7 @@ CarTugOfWar: CMakeFiles/CarTugOfWar.dir/rule
 # codegen rule for target.
 CMakeFiles/CarTugOfWar.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=1,2 "Finished codegen for target CarTugOfWar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target CarTugOfWar"
 .PHONY : CMakeFiles/CarTugOfWar.dir/codegen
 
 # clean rule for target.
@@ -117,6 +117,7 @@ CMakeFiles/CarTugOfWar.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
