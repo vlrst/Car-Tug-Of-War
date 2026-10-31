@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/harsh/Documents/Car-Tug-Of-War
+CMAKE_SOURCE_DIR = /Users/harsh/Documents/Plinko
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/harsh/Documents/Car-Tug-Of-War/build
+CMAKE_BINARY_DIR = /Users/harsh/Documents/Plinko/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles /Users/harsh/Documents/Car-Tug-Of-War/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/harsh/Documents/Plinko/build/CMakeFiles /Users/harsh/Documents/Plinko/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/harsh/Documents/Plinko/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,77 +113,29 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /Users/harsh/Documents/Plinko/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CarTugOfWar
+# Target rules for targets named Plinko
 
 # Build rule for target.
-CarTugOfWar: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CarTugOfWar
-.PHONY : CarTugOfWar
+Plinko: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Plinko
+.PHONY : Plinko
 
 # fast build rule for target.
-CarTugOfWar/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/build
-.PHONY : CarTugOfWar/fast
-
-src/Car.o: src/Car.cpp.o
-.PHONY : src/Car.o
-
-# target to build an object file
-src/Car.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Car.cpp.o
-.PHONY : src/Car.cpp.o
-
-src/Car.i: src/Car.cpp.i
-.PHONY : src/Car.i
-
-# target to preprocess a source file
-src/Car.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Car.cpp.i
-.PHONY : src/Car.cpp.i
-
-src/Car.s: src/Car.cpp.s
-.PHONY : src/Car.s
-
-# target to generate assembly for a file
-src/Car.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Car.cpp.s
-.PHONY : src/Car.cpp.s
-
-src/CarTugOfWar.o: src/CarTugOfWar.cpp.o
-.PHONY : src/CarTugOfWar.o
-
-# target to build an object file
-src/CarTugOfWar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.o
-.PHONY : src/CarTugOfWar.cpp.o
-
-src/CarTugOfWar.i: src/CarTugOfWar.cpp.i
-.PHONY : src/CarTugOfWar.i
-
-# target to preprocess a source file
-src/CarTugOfWar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.i
-.PHONY : src/CarTugOfWar.cpp.i
-
-src/CarTugOfWar.s: src/CarTugOfWar.cpp.s
-.PHONY : src/CarTugOfWar.s
-
-# target to generate assembly for a file
-src/CarTugOfWar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/CarTugOfWar.cpp.s
-.PHONY : src/CarTugOfWar.cpp.s
+Plinko/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/build
+.PHONY : Plinko/fast
 
 src/Kinematics.o: src/Kinematics.cpp.o
 .PHONY : src/Kinematics.o
 
 # target to build an object file
 src/Kinematics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/Kinematics.cpp.o
 .PHONY : src/Kinematics.cpp.o
 
 src/Kinematics.i: src/Kinematics.cpp.i
@@ -191,7 +143,7 @@ src/Kinematics.i: src/Kinematics.cpp.i
 
 # target to preprocess a source file
 src/Kinematics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/Kinematics.cpp.i
 .PHONY : src/Kinematics.cpp.i
 
 src/Kinematics.s: src/Kinematics.cpp.s
@@ -199,15 +151,39 @@ src/Kinematics.s: src/Kinematics.cpp.s
 
 # target to generate assembly for a file
 src/Kinematics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/Kinematics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/Kinematics.cpp.s
 .PHONY : src/Kinematics.cpp.s
+
+src/Plinko.o: src/Plinko.cpp.o
+.PHONY : src/Plinko.o
+
+# target to build an object file
+src/Plinko.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/Plinko.cpp.o
+.PHONY : src/Plinko.cpp.o
+
+src/Plinko.i: src/Plinko.cpp.i
+.PHONY : src/Plinko.i
+
+# target to preprocess a source file
+src/Plinko.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/Plinko.cpp.i
+.PHONY : src/Plinko.cpp.i
+
+src/Plinko.s: src/Plinko.cpp.s
+.PHONY : src/Plinko.s
+
+# target to generate assembly for a file
+src/Plinko.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/Plinko.cpp.s
+.PHONY : src/Plinko.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -215,7 +191,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -223,7 +199,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CarTugOfWar.dir/build.make CMakeFiles/CarTugOfWar.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Plinko.dir/build.make CMakeFiles/Plinko.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -234,16 +210,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CarTugOfWar"
-	@echo "... src/Car.o"
-	@echo "... src/Car.i"
-	@echo "... src/Car.s"
-	@echo "... src/CarTugOfWar.o"
-	@echo "... src/CarTugOfWar.i"
-	@echo "... src/CarTugOfWar.s"
+	@echo "... Plinko"
 	@echo "... src/Kinematics.o"
 	@echo "... src/Kinematics.i"
 	@echo "... src/Kinematics.s"
+	@echo "... src/Plinko.o"
+	@echo "... src/Plinko.i"
+	@echo "... src/Plinko.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -258,7 +231,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /Users/harsh/Documents/Plinko/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

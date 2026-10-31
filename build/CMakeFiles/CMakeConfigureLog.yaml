@@ -31,6 +31,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -51,6 +52,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -59,7 +61,7 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
       - "CMakeLists.txt:4 (project)"
     message: |
-      The system is: Darwin - 25.6.0 - arm64
+      The system is: Darwin - 27.0.0 - arm64
   -
     kind: "find-v1"
     backtrace:
@@ -92,6 +94,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -106,6 +109,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
       - "/pkg/env/global/bin/gmake"
+      - "/Applications/VMware Fusion.app/Contents/Public/gmake"
       - "/opt/homebrew/bin/gmake"
       - "/Users/harsh/.cargo/bin/gmake"
       - "/Library/Frameworks/Python.framework/Versions/3.13/bin/make"
@@ -125,6 +129,68 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/opt/homebrew/bin"
+        - "/Users/harsh/.cargo/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:4 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/opt/homebrew/bin/"
+      - "/Users/harsh/.cargo/bin/"
+    searched_directories:
+      - "/Library/Frameworks/Python.framework/Versions/3.13/bin/c++"
+      - "/usr/local/bin/c++"
+      - "/System/Cryptexes/App/usr/bin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -165,6 +231,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -176,7 +243,7 @@ events:
       - "CMakeLists.txt:4 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/clang++ 
+      Compiler: /usr/bin/c++ 
       Build flags: 
       Id flags:  
       
@@ -187,7 +254,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is AppleClang, found in:
-        /Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/4.4.4/CompilerIdCXX/a.out
+        /Users/harsh/Documents/Plinko/build/CMakeFiles/4.4.4/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
@@ -196,7 +263,7 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:4 (project)"
     message: |
-      Detecting CXX compiler apple sysroot: "/usr/bin/clang++" "-E" "apple-sdk.cpp"
+      Detecting CXX compiler apple sysroot: "/usr/bin/c++" "-E" "apple-sdk.cpp"
         # 1 "apple-sdk.cpp"
         # 1 "<built-in>" 1
         # 1 "<built-in>" 3
@@ -261,6 +328,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     found: "/usr/bin/ar"
@@ -277,6 +345,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -310,6 +379,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     found: "/usr/bin/ranlib"
@@ -326,6 +396,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -359,6 +430,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     found: "/usr/bin/strip"
@@ -375,6 +447,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -408,6 +481,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     found: "/usr/bin/ld"
@@ -424,6 +498,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -457,6 +532,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     found: "/usr/bin/nm"
@@ -473,6 +549,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -506,6 +583,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     found: "/usr/bin/objdump"
@@ -522,6 +600,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -555,6 +634,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -569,6 +649,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
       - "/pkg/env/global/bin/objcopy"
+      - "/Applications/VMware Fusion.app/Contents/Public/objcopy"
       - "/opt/homebrew/bin/objcopy"
       - "/Users/harsh/.cargo/bin/objcopy"
     found: false
@@ -585,6 +666,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -618,6 +700,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -632,6 +715,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
       - "/pkg/env/global/bin/readelf"
+      - "/Applications/VMware Fusion.app/Contents/Public/readelf"
       - "/opt/homebrew/bin/readelf"
       - "/Users/harsh/.cargo/bin/readelf"
     found: false
@@ -648,6 +732,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -681,6 +766,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -695,6 +781,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
       - "/pkg/env/global/bin/dlltool"
+      - "/Applications/VMware Fusion.app/Contents/Public/dlltool"
       - "/opt/homebrew/bin/dlltool"
       - "/Users/harsh/.cargo/bin/dlltool"
     found: false
@@ -711,6 +798,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -744,6 +832,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -758,6 +847,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
       - "/pkg/env/global/bin/addr2line"
+      - "/Applications/VMware Fusion.app/Contents/Public/addr2line"
       - "/opt/homebrew/bin/addr2line"
       - "/Users/harsh/.cargo/bin/addr2line"
     found: false
@@ -774,6 +864,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -807,6 +898,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -821,6 +913,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
       - "/pkg/env/global/bin/tapi"
+      - "/Applications/VMware Fusion.app/Contents/Public/tapi"
       - "/opt/homebrew/bin/tapi"
       - "/Users/harsh/.cargo/bin/tapi"
     found: false
@@ -837,6 +930,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
   -
@@ -870,6 +964,7 @@ events:
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
       - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
       - "/pkg/env/global/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
       - "/opt/homebrew/bin/"
       - "/Users/harsh/.cargo/bin/"
     searched_directories:
@@ -890,6 +985,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
@@ -902,8 +998,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G"
-      binary: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G"
+      source: "/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW"
+      binary: "/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -917,20 +1013,20 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G'
+        Change Dir: '/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW'
         
-        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3f849/fast
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3f849.dir/build.make CMakeFiles/cmTC_3f849.dir/build
-        Building CXX object CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/clang++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_69fb6/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_69fb6.dir/build.make CMakeFiles/cmTC_69fb6.dir/build
+        Building CXX object CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 21.0.0 (clang-2100.0.123.102)
-        Target: arm64-apple-darwin25.6.0
+        Target: arm64-apple-darwin27.0.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G -target-linker-version 1266.8 -v -fcoverage-compilation-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-        clang -cc1 version 21.0.0 (clang-2100.0.123.102) default target arm64-apple-darwin25.6.0
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.4.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW -target-linker-version 1266.8 -v -fcoverage-compilation-dir=/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.0.0 (clang-2100.0.123.102) default target arm64-apple-darwin27.0.0
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
         ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
         #include "..." search starts here:
@@ -943,13 +1039,13 @@ events:
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
          /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)
         End of search list.
-        Linking CXX executable cmTC_3f849
-        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f849.dir/link.txt --verbose=1
+        Linking CXX executable cmTC_69fb6
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69fb6.dir/link.txt --verbose=1
         Apple clang version 21.0.0 (clang-2100.0.123.102)
-        Target: arm64-apple-darwin25.6.0
+        Target: arm64-apple-darwin27.0.0
         Thread model: posix
         InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_3f849 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.4.0 26.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_69fb6 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1266.8
         BUILD 16:03:08 Mar  6 2026
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em armv8m.main armv8.1m.main
@@ -962,7 +1058,7 @@ events:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
-        /usr/bin/clang++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3f849
+        /usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_69fb6
         
       exitCode: 0
   -
@@ -1008,20 +1104,20 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G']
+        ignore line: [Change Dir: '/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3f849/fast]
-        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3f849.dir/build.make CMakeFiles/cmTC_3f849.dir/build]
-        ignore line: [Building CXX object CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/clang++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_69fb6/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_69fb6.dir/build.make CMakeFiles/cmTC_69fb6.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 21.0.0 (clang-2100.0.123.102)]
-        ignore line: [Target: arm64-apple-darwin25.6.0]
+        ignore line: [Target: arm64-apple-darwin27.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G -target-linker-version 1266.8 -v -fcoverage-compilation-dir=/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/CMakeScratch/TryCompile-SMIk1G -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang -cc1 version 21.0.0 (clang-2100.0.123.102) default target arm64-apple-darwin25.6.0]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx26.4.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -fno-sized-deallocation -target-sdk-version=26.4 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW -target-linker-version 1266.8 -v -fcoverage-compilation-dir=/Users/harsh/Documents/Plinko/build/CMakeFiles/CMakeScratch/TryCompile-GadfUW -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21 -dependency-file CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks -internal-iframework /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks -Wno-elaborated-enum-base -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -Wno-error=allocator-wrappers -fdwarf2-cfi-asm -o CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.0.0 (clang-2100.0.123.102) default target arm64-apple-darwin27.0.0]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
         ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
         ignore line: [#include "..." search starts here:]
@@ -1034,14 +1130,14 @@ events:
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/SubFrameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_3f849]
-        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f849.dir/link.txt --verbose=1]
+        ignore line: [Linking CXX executable cmTC_69fb6]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69fb6.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 21.0.0 (clang-2100.0.123.102)]
-        ignore line: [Target: arm64-apple-darwin25.6.0]
+        ignore line: [Target: arm64-apple-darwin27.0.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_3f849 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> linker [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld]
-        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.0.0 26.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_3f849 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.4.0 26.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_69fb6 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> linker [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 26.4.0 26.4 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_69fb6 -L/usr/local/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1051,19 +1147,19 @@ events:
           arg [arm64] ==> ignore
           arg [-platform_version] ==> ignore
           arg [macos] ==> ignore
-          arg [26.0.0] ==> ignore
+          arg [26.4.0] ==> ignore
           arg [26.4] ==> ignore
           arg [-syslibroot] ==> ignore
           arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_3f849] ==> ignore
+          arg [cmTC_69fb6] ==> ignore
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-search_paths_first] ==> ignore
           arg [-headerpad_max_install_names] ==> ignore
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_3f849.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_69fb6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/lib/darwin/libclang_rt.osx.a]
@@ -1140,35 +1236,35 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/SDL3Config.cmake"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/SDL3Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/sdl3-config.cmake"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/sdl3-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/lib64/cps/SDL3.cps"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/lib64/cps/SDL3.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/lib64/cps/sdl3.cps"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/lib64/cps/sdl3.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/lib/cps/SDL3.cps"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/lib/cps/SDL3.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/lib/cps/sdl3.cps"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/lib/cps/sdl3.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/share/cps/SDL3.cps"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/share/cps/SDL3.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/Users/harsh/Documents/Car-Tug-Of-War/build/CMakeFiles/pkgRedirects/share/cps/sdl3.cps"
+        path: "/Users/harsh/Documents/Plinko/build/CMakeFiles/pkgRedirects/share/cps/sdl3.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -1332,6 +1428,70 @@ events:
         mode: "cps"
         reason: "no_exist"
       -
+        path: "/pkg/env/global/SDL3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/pkg/env/global/sdl3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/pkg/env/global/lib64/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/pkg/env/global/lib64/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/pkg/env/global/lib/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/pkg/env/global/lib/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/pkg/env/global/share/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/pkg/env/global/share/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/SDL3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/sdl3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/lib64/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/lib64/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/lib/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/lib/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/share/cps/SDL3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Applications/VMware Fusion.app/Contents/Public/share/cps/sdl3.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
         path: "/opt/homebrew/SDL3Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1380,6 +1540,7 @@ events:
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
         - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
         - "/pkg/env/global/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
         - "/opt/homebrew/bin"
         - "/Users/harsh/.cargo/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
